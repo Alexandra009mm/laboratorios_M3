@@ -1,0 +1,10 @@
+// Haz tu primer GET
+fetch("https://jsonplaceholder.typicode.com/posts/1")
+  .then(response => {
+    // Convierte a JSON
+   return response.json()
+  })
+  .then(data => {
+    // Imprime el resultado
+   console.log(data)
+  });
